@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Booking Confirmed | DocHome</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@400;500;600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed": "#ffdad5",
+              "surface-container": "#eceef1",
+              "on-secondary-fixed-variant": "#1d496f",
+              "surface-variant": "#e0e3e6",
+              "surface-container-low": "#f2f4f7",
+              "primary-fixed-dim": "#4eddbb",
+              "tertiary": "#530001",
+              "on-primary-fixed": "#002019",
+              "on-error-container": "#93000a",
+              "surface-container-high": "#e6e8eb",
+              "primary-fixed": "#6ff9d6",
+              "on-background": "#191c1e",
+              "secondary-fixed-dim": "#a2caf7",
+              "on-surface-variant": "#42474e",
+              "surface-bright": "#f7f9fc",
+              "surface": "#f7f9fc",
+              "surface-dim": "#d8dadd",
+              "on-secondary-fixed": "#001d34",
+              "inverse-surface": "#2d3133",
+              "tertiary-container": "#7c0002",
+              "outline": "#72777f",
+              "on-secondary-container": "#315b81",
+              "background": "#f7f9fc",
+              "on-tertiary-container": "#ff7e6d",
+              "on-tertiary-fixed": "#410000",
+              "inverse-on-surface": "#eff1f4",
+              "primary": "#002b22",
+              "on-error": "#ffffff",
+              "inverse-primary": "#4eddbb",
+              "secondary-fixed": "#cfe5ff",
+              "surface-tint": "#006b58",
+              "surface-container-lowest": "#ffffff",
+              "error-container": "#ffdad6",
+              "on-tertiary-fixed-variant": "#910807",
+              "tertiary-fixed-dim": "#ffb4a9",
+              "on-primary-fixed-variant": "#005141",
+              "outline-variant": "#c2c7cf",
+              "on-primary": "#ffffff",
+              "on-surface": "#191c1e",
+              "secondary": "#386188",
+              "on-tertiary": "#ffffff",
+              "on-primary-container": "#12b99a",
+              "secondary-container": "#aad3ff",
+              "primary-container": "#004336",
+              "surface-container-highest": "#e0e3e6",
+              "on-secondary": "#ffffff",
+              "error": "#ba1a1a"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Manrope", "sans-serif"],
+              "label": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .bg-primary-gradient {
+        background: linear-gradient(135deg, #002b22 0%, #004336 100%);
+      }
+      .success-glow {
+        box-shadow: 0 12px 32px rgba(18, 185, 154, 0.15);
+      }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold tracking-tight text-[#0A3D62] dark:text-blue-200">DocHome</div>
+<div class="hidden md:flex space-x-8">
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#0A3D62] dark:hover:text-blue-200 transition-colors" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#0A3D62] dark:hover:text-blue-200 transition-colors" href="#">Services</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#0A3D62] dark:hover:text-blue-200 transition-colors" href="#">How It Works</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#0A3D62] dark:hover:text-blue-200 transition-colors" href="#">Doctors</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#0A3D62] dark:hover:text-blue-200 transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center space-x-6">
+<span class="hidden lg:block text-[#0A3D62] font-semibold">+1-800-DOCHOME</span>
+<span class="material-symbols-outlined text-[#0A3D62]" data-icon="stethoscope">stethoscope</span>
+<button class="bg-primary-gradient text-white px-6 py-2.5 rounded-xl font-semibold hover:opacity-90 active:scale-95 transition-all">Book Now</button>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="min-h-screen pt-32 pb-20 px-4">
+<div class="max-w-2xl mx-auto text-center">
+<!-- Success Icon -->
+<div class="mb-8 flex justify-center">
+<div class="w-24 h-24 rounded-full bg-on-primary-container/10 flex items-center justify-center success-glow">
+<span class="material-symbols-outlined text-on-primary-container text-6xl" style="font-variation-settings: 'wght' 700;">check_circle</span>
+</div>
+</div>
+<!-- Header Section -->
+<h1 class="font-headline text-5xl md:text-6xl text-primary mb-4 leading-tight">
+                Your Doctor Is <span class="italic">On The Way!</span>
+</h1>
+<p class="text-on-surface-variant text-lg mb-12 font-medium">
+                Booking confirmed. Here's your summary:
+            </p>
+<!-- Confirmation Card -->
+<div class="bg-surface-container-low rounded-xl p-1 mb-8">
+<div class="bg-surface-container-lowest rounded-lg p-8 text-left shadow-[0_12px_32px_rgba(0,43,34,0.04)]">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Left Column: Patient & Service -->
+<div class="space-y-6">
+<div>
+<label class="text-xs font-bold uppercase tracking-wider text-outline mb-1 block">Patient Name</label>
+<p class="text-lg font-bold text-on-surface">Rahul Sharma</p>
+</div>
+<div>
+<label class="text-xs font-bold uppercase tracking-wider text-outline mb-1 block">Service</label>
+<p class="text-lg font-bold text-on-surface">General Illness Visit</p>
+</div>
+<div>
+<label class="text-xs font-bold uppercase tracking-wider text-outline mb-1 block">Booking ID</label>
+<p class="font-mono text-sm text-secondary">#DH-20481</p>
+</div>
+</div>
+<!-- Right Column: Doctor & Arrival -->
+<div class="space-y-6">
+<div>
+<label class="text-xs font-bold uppercase tracking-wider text-outline mb-1 block">Doctor Assigned</label>
+<div class="flex items-center gap-3 mt-2">
+<img alt="Dr. Priya Sharma profile photo" class="w-12 h-12 rounded-full object-cover" data-alt="professional female doctor in white coat smiling warmly in a bright medical setting with soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDif6p07CqfRGiPXmQ4bgaKzcyLtZxnZIa6vJIqFVl3_XW8BrrtPTe3qUXFghaU_AbYAXHNxXDG7BK9Zj90biBXJyzcVVndH3sdtNZyTw8ExFVSTLKEFZ0JaGbZE8w5bnSjmpBMTDCZDXXc-Z-vjsHlBeeQ62xlkbknVZ3TwHbzsFdtoCVWr-L-gBc0dZR6Ecv02pKuvDmx__X3D_o0J3CP5fcOMwXa6zyjkqvoHVGr9uRSySacdPrBXwt54WnqAeduupejYgvIcDc"/>
+<div>
+<p class="font-bold text-on-surface">Dr. Priya Sharma</p>
+<div class="flex items-center gap-1 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-amber-400 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-semibold">4.9 rating</span>
+</div>
+</div>
+</div>
+</div>
+<div>
+<label class="text-xs font-bold uppercase tracking-wider text-outline mb-1 block">Estimated Arrival</label>
+<div class="flex items-center gap-2 text-primary font-bold">
+<span class="material-symbols-outlined text-lg">schedule</span>
+<p class="text-lg">Today, 3:30 PM – 4:00 PM</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Row -->
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
+<button class="w-full sm:w-auto flex items-center justify-center gap-2 border-2 border-on-primary-container text-on-primary-container px-8 py-3 rounded-xl font-bold hover:bg-on-primary-container/5 transition-all active:scale-95">
+<span class="material-symbols-outlined">sms</span>
+                    Get SMS Updates
+                </button>
+<button class="w-full sm:w-auto flex items-center justify-center gap-2 border-2 border-on-primary-container text-on-primary-container px-8 py-3 rounded-xl font-bold hover:bg-on-primary-container/5 transition-all active:scale-95">
+<span class="material-symbols-outlined">call</span>
+                    Call Your Doctor
+                </button>
+</div>
+<a class="text-secondary font-bold text-sm underline underline-offset-8 decoration-2 hover:text-primary transition-colors inline-flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-sm">calendar_add_on</span>
+                Add to Calendar
+            </a>
+<!-- Bottom Support Message -->
+<div class="mt-20 pt-8 border-t border-outline-variant/20 max-w-md mx-auto">
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                    Need to reschedule? Call us at <span class="font-bold text-on-surface">+91-XXXXXXXXXX</span> or reply to your confirmation SMS.
+                </p>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 w-full">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-black text-[#0A3D62] dark:text-blue-200 mb-4">DocHome</div>
+<p class="text-slate-500 text-sm font-body">Premium medical care delivered to your doorstep. Experience the new standard of patient-first healthcare.</p>
+</div>
+<div class="space-y-4">
+<h4 class="font-headline text-lg font-bold text-[#0A3D62] dark:text-blue-400">Quick Links</h4>
+<ul class="space-y-2">
+<li><a class="text-slate-500 hover:text-[#0A3D62] transition-all text-sm" href="#">About</a></li>
+<li><a class="text-slate-500 hover:text-[#0A3D62] transition-all text-sm" href="#">Doctors</a></li>
+<li><a class="text-slate-500 hover:text-[#0A3D62] transition-all text-sm" href="#">Contact</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-headline text-lg font-bold text-[#0A3D62] dark:text-blue-400">Support</h4>
+<ul class="space-y-2">
+<li><a class="text-slate-500 hover:text-[#0A3D62] transition-all text-sm" href="#">Terms</a></li>
+<li><a class="text-slate-500 hover:text-[#0A3D62] transition-all text-sm" href="#">Privacy</a></li>
+<li><a class="text-slate-500 hover:text-[#0A3D62] transition-all text-sm" href="#">FAQ</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-headline text-lg font-bold text-[#0A3D62] dark:text-blue-400">Join Our Team</h4>
+<p class="text-slate-500 text-sm">Are you a medical professional looking to join our network?</p>
+<button class="text-[#0A3D62] font-bold underline underline-offset-4 text-sm">Apply as a Doctor</button>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-12 pb-12">
+<div class="pt-8 border-t border-slate-200 dark:border-slate-800">
+<p class="text-slate-500 text-xs text-center">© 2024 DocHome Medical Services. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</body></html>

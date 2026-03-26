@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Book Your Home Visit | DocHome</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "tertiary-fixed": "#ffdad5",
+                "surface-container": "#eceef1",
+                "on-secondary-fixed-variant": "#1d496f",
+                "surface-variant": "#e0e3e6",
+                "surface-container-low": "#f2f4f7",
+                "primary-fixed-dim": "#4eddbb",
+                "tertiary": "#530001",
+                "on-primary-fixed": "#002019",
+                "on-error-container": "#93000a",
+                "surface-container-high": "#e6e8eb",
+                "primary-fixed": "#6ff9d6",
+                "on-background": "#191c1e",
+                "secondary-fixed-dim": "#a2caf7",
+                "on-surface-variant": "#42474e",
+                "surface-bright": "#f7f9fc",
+                "surface": "#f7f9fc",
+                "surface-dim": "#d8dadd",
+                "on-secondary-fixed": "#001d34",
+                "inverse-surface": "#2d3133",
+                "tertiary-container": "#7c0002",
+                "outline": "#72777f",
+                "on-secondary-container": "#315b81",
+                "background": "#f7f9fc",
+                "on-tertiary-container": "#ff7e6d",
+                "on-tertiary-fixed": "#410000",
+                "inverse-on-surface": "#eff1f4",
+                "primary": "#002b22",
+                "on-error": "#ffffff",
+                "inverse-primary": "#4eddbb",
+                "secondary-fixed": "#cfe5ff",
+                "surface-tint": "#006b58",
+                "surface-container-lowest": "#ffffff",
+                "error-container": "#ffdad6",
+                "on-tertiary-fixed-variant": "#910807",
+                "tertiary-fixed-dim": "#ffb4a9",
+                "on-primary-fixed-variant": "#005141",
+                "outline-variant": "#c2c7cf",
+                "on-primary": "#ffffff",
+                "on-surface": "#191c1e",
+                "secondary": "#386188",
+                "on-tertiary": "#ffffff",
+                "on-primary-container": "#12b99a",
+                "secondary-container": "#aad3ff",
+                "primary-container": "#004336",
+                "surface-container-highest": "#e0e3e6",
+                "on-secondary": "#ffffff",
+                "error": "#ba1a1a"
+              },
+              fontFamily: {
+                "headline": ["Newsreader", "serif"],
+                "body": ["Manrope", "sans-serif"],
+                "label": ["Manrope", "sans-serif"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        .font-headline { font-family: 'Newsreader', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .booking-gradient {
+            background: linear-gradient(135deg, #1ABC9C 0%, #0A3D62 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed-dim selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold tracking-tight text-[#0A3D62] dark:text-blue-200">DocHome</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#0A3D62] dark:hover:text-blue-200 transition-colors" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#0A3D62] dark:hover:text-blue-200 transition-colors" href="#">Services</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#0A3D62] dark:hover:text-blue-200 transition-colors" href="#">How It Works</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#0A3D62] dark:hover:text-blue-200 transition-colors" href="#">Doctors</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#0A3D62] dark:hover:text-blue-200 transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center space-x-6">
+<div class="hidden lg:flex flex-col items-end">
+<span class="text-xs font-bold uppercase tracking-widest text-secondary">+1-800-DOCHOME</span>
+</div>
+<button class="bg-[#0A3D62] text-white px-6 py-2.5 rounded-full font-semibold text-sm hover:opacity-90 active:scale-95 transition-all">
+                    Book Now
+                </button>
+<div class="hidden sm:block">
+<span class="material-symbols-outlined text-2xl text-[#0A3D62]" data-icon="stethoscope">stethoscope</span>
+</div>
+</div>
+</div>
+</nav>
+<main class="min-h-screen pt-24 pb-20 booking-gradient flex items-center justify-center px-4 sm:px-6">
+<div class="w-full max-w-2xl">
+<!-- Form Header -->
+<div class="text-center mb-10 text-white">
+<h1 class="font-headline text-4xl md:text-5xl font-medium mb-3">Book Your Home Visit in 60 Seconds</h1>
+<p class="text-lg opacity-90 font-light">No paperwork. No waiting room. Just care at your door.</p>
+</div>
+<!-- Booking Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-2xl p-8 md:p-12 overflow-hidden relative">
+<!-- Subtle Top Accent -->
+<div class="absolute top-0 left-0 w-full h-1.5 bg-[#1ABC9C]"></div>
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Name Field -->
+<div class="space-y-2">
+<label class="block text-sm font-bold text-on-surface-variant uppercase tracking-wider">Your Name</label>
+<input class="w-full px-0 py-3 bg-transparent border-t-0 border-l-0 border-r-0 border-b-2 border-surface-variant focus:border-[#1ABC9C] focus:ring-0 text-on-surface transition-colors placeholder:text-outline-variant font-body" placeholder="John Doe" type="text"/>
+</div>
+<!-- Phone Field -->
+<div class="space-y-2">
+<label class="block text-sm font-bold text-on-surface-variant uppercase tracking-wider">Phone Number</label>
+<div class="flex items-center border-b-2 border-surface-variant focus-within:border-[#1ABC9C] transition-colors">
+<span class="pr-3 text-on-surface-variant font-medium">+91</span>
+<input class="w-full px-0 py-3 bg-transparent border-none focus:ring-0 text-on-surface placeholder:text-outline-variant font-body" placeholder="98765 43210" type="tel"/>
+</div>
+</div>
+<!-- Location Field -->
+<div class="space-y-2">
+<label class="block text-sm font-bold text-on-surface-variant uppercase tracking-wider">Your Location / Pincode</label>
+<div class="flex items-center border-b-2 border-surface-variant focus-within:border-[#1ABC9C] transition-colors">
+<span class="material-symbols-outlined pr-3 text-[#1ABC9C]" data-icon="location_on">location_on</span>
+<input class="w-full px-0 py-3 bg-transparent border-none focus:ring-0 text-on-surface placeholder:text-outline-variant font-body" placeholder="Enter Pincode or Area" type="text"/>
+</div>
+</div>
+<!-- Service Field -->
+<div class="space-y-2">
+<label class="block text-sm font-bold text-on-surface-variant uppercase tracking-wider">Service Needed</label>
+<select class="w-full px-0 py-3 bg-transparent border-t-0 border-l-0 border-r-0 border-b-2 border-surface-variant focus:border-[#1ABC9C] focus:ring-0 text-on-surface transition-colors font-body appearance-none">
+<option value="">Select Service</option>
+<option value="illness">General Illness</option>
+<option value="pediatric">Pediatric</option>
+<option value="elder">Elder Care</option>
+<option value="checkup">Checkup</option>
+<option value="other">Other</option>
+</select>
+</div>
+</div>
+<!-- Time Slot Selector -->
+<div class="space-y-4">
+<label class="block text-sm font-bold text-on-surface-variant uppercase tracking-wider">Preferred Time Slot</label>
+<div class="grid grid-cols-3 gap-4">
+<button class="py-4 border-2 border-surface-container-high rounded-xl text-center hover:border-[#1ABC9C] hover:bg-surface-container-low transition-all focus:border-[#1ABC9C] focus:bg-[#1ABC9C]/5" type="button">
+<span class="block text-sm font-bold">Today</span>
+<span class="text-xs text-on-surface-variant">Asap</span>
+</button>
+<button class="py-4 border-2 border-surface-container-high rounded-xl text-center hover:border-[#1ABC9C] hover:bg-surface-container-low transition-all focus:border-[#1ABC9C] focus:bg-[#1ABC9C]/5" type="button">
+<span class="block text-sm font-bold">Tomorrow</span>
+<span class="text-xs text-on-surface-variant">Available</span>
+</button>
+<button class="py-4 border-2 border-surface-container-high rounded-xl text-center hover:border-[#1ABC9C] hover:bg-surface-container-low transition-all focus:border-[#1ABC9C] focus:bg-[#1ABC9C]/5" type="button">
+<span class="block text-sm font-bold">Choose Date</span>
+<span class="material-symbols-outlined text-xs align-middle" data-icon="calendar_month">calendar_month</span>
+</button>
+</div>
+</div>
+<!-- Submit Button -->
+<div class="pt-4 space-y-6">
+<button class="w-full py-5 bg-[#0A3D62] text-white rounded-xl font-bold text-lg shadow-lg hover:shadow-xl hover:opacity-95 transform active:scale-[0.98] transition-all" type="submit">
+                            Confirm My Booking
+                        </button>
+<!-- Footer Info -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-surface-variant/30 text-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-secondary" data-icon="lock" data-weight="fill" style="font-variation-settings: 'FILL' 1;">lock</span>
+                                Your information is 100% private and secure
+                            </div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-[#1ABC9C]" data-icon="call">call</span>
+                                Prefer to call? Reach us at <span class="font-bold text-[#0A3D62]">+91-XXXXXXXXXX</span>
+</div>
+</div>
+</div>
+</form>
+</div>
+<!-- Trust Badges -->
+<div class="mt-12 flex justify-center items-center gap-12 opacity-60 grayscale filter contrast-125">
+<img alt="Trust Logo" class="h-8 object-contain" data-alt="minimalist medical trust badge logo white outline" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxEWK_R_wNb8v9Q_70Rva45QayyrE9uC8H_8KjE59XcgwrDe2WvUCKnksWPuBLvzxY0FvUW8JIPT92PBXiYu_Y76WZX09SKTRfpMfJhNYJKmpTC0qONDe1lHvDZA2xE3KDa4aAPOLofZNoMD0XOsWaTQQ5aUtcehyksqE3BaDR7GjH9NUmka_szk8mefHr9PSgkQysIHYKX7ewNCNd0_vqieuTK1_WGzLFCXWKY146OnBCCa2F2gnlDolLmxqpW2cMwvG-X6YJxJg"/>
+<img alt="Verified Logo" class="h-6 object-contain" data-alt="verified by visa security badge icon white silhouette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjza7sylM6Vklmrxo6mMJsREpmH84NLLN83QNPAI8QdXPjruiOjgVK7k6pyG_7WHVvox-QfutER_mOv7DmEkl8Je38bK7yGuF6cgl1gzf-I9b-UI6Nb5Riw-1GK8P2trXPvhz7G9gGPZWU8SNLyCZP_UWNJltAUyS6aIiv2gHg-y-tRPOg5BY_KrDt32KcgmlKTVlVq-_Aq-6qX7AcESydnVnBeDZs0ffTaEkjxAethX9tjPLqKiwCBtD5Abhzwqzs08sKgFRScsU"/>
+<img alt="Mastercard" class="h-8 object-contain" data-alt="mastercard payment provider logo simple white icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCx7cjXRflzvKe-nOQBFoqRPBLDeA5w_4Jbjedu-fTjlmsn-ElLOqoPfWiOCnGmXJNpg-4BUrbG08Uydwh2c-ZAshbiveMyhXy2q140NVsEUjqIzH661GanLVe3B_XzApdsx-ppXl7BQxONJbKJbeXqQJXtGnKfJ_vyEvYGZOVFp91L8htPX-CJTnnJIncIqwgpgYKiQwcwaAy9xG75v7WlZ-NK0Fnxu13SwHULxcbzrMKiYkpuiBMeJnX2xolxiWQiljWTbCIZAaQ"/>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 border-t-0">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 max-w-7xl mx-auto">
+<div class="space-y-6">
+<div class="text-xl font-black text-[#0A3D62] dark:text-blue-200 uppercase tracking-tighter">DocHome</div>
+<p class="text-slate-500 font-body text-sm leading-relaxed">
+                    Bringing elite medical expertise directly to your doorstep. Experience the future of personalized healthcare.
+                </p>
+</div>
+<div>
+<h4 class="font-headline text-lg font-bold text-[#0A3D62] dark:text-blue-400 mb-6">Explore</h4>
+<ul class="space-y-4 font-body text-sm">
+<li><a class="text-slate-500 hover:text-[#0A3D62] transition-all" href="#">About DocHome</a></li>
+<li><a class="text-slate-500 hover:text-[#0A3D62] transition-all" href="#">Our Doctors</a></li>
+<li><a class="text-slate-500 hover:text-[#0A3D62] transition-all" href="#">Services Portfolio</a></li>
+<li><a class="text-slate-500 hover:text-[#0A3D62] transition-all" href="#">Medical Blog</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline text-lg font-bold text-[#0A3D62] dark:text-blue-400 mb-6">Support</h4>
+<ul class="space-y-4 font-body text-sm">
+<li><a class="text-slate-500 hover:text-[#0A3D62] transition-all" href="#">Terms of Service</a></li>
+<li><a class="text-slate-500 hover:text-[#0A3D62] transition-all" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 hover:text-[#0A3D62] transition-all" href="#">FAQ</a></li>
+<li><a class="text-slate-500 hover:text-[#0A3D62] transition-all" href="#">Help Center</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline text-lg font-bold text-[#0A3D62] dark:text-blue-400 mb-6">Newsletter</h4>
+<p class="text-slate-500 text-sm mb-4">Stay updated with our latest health tips.</p>
+<div class="flex gap-2">
+<input class="bg-white border border-surface-variant rounded-lg px-4 py-2 text-sm focus:ring-[#0A3D62] focus:border-[#0A3D62] w-full" placeholder="email@example.com" type="email"/>
+<button class="bg-[#0A3D62] p-2 rounded-lg text-white">
+<span class="material-symbols-outlined text-sm" data-icon="send">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-12 py-8 border-t border-surface-variant/30 flex flex-col md:flex-row justify-between items-center gap-4">
+<span class="text-slate-400 text-xs font-body uppercase tracking-widest">© 2024 DocHome Medical Services. All rights reserved.</span>
+<div class="flex gap-6">
+<a class="text-slate-400 hover:text-[#0A3D62] transition-colors" href="#"><span class="material-symbols-outlined text-xl" data-icon="public">public</span></a>
+<a class="text-slate-400 hover:text-[#0A3D62] transition-colors" href="#"><span class="material-symbols-outlined text-xl" data-icon="chat">chat</span></a>
+<a class="text-slate-400 hover:text-[#0A3D62] transition-colors" href="#"><span class="material-symbols-outlined text-xl" data-icon="share">share</span></a>
+</div>
+</div>
+</footer>
+</body></html>

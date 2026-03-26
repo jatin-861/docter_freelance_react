@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DocHome | Medical Care at Your Doorstep</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "tertiary-fixed": "#ffdad5",
+                "surface-container": "#eceef1",
+                "on-secondary-fixed-variant": "#1d496f",
+                "surface-variant": "#e0e3e6",
+                "surface-container-low": "#f2f4f7",
+                "primary-fixed-dim": "#4eddbb",
+                "tertiary": "#530001",
+                "on-primary-fixed": "#002019",
+                "on-error-container": "#93000a",
+                "surface-container-high": "#e6e8eb",
+                "primary-fixed": "#6ff9d6",
+                "on-background": "#191c1e",
+                "secondary-fixed-dim": "#a2caf7",
+                "on-surface-variant": "#42474e",
+                "surface-bright": "#f7f9fc",
+                "surface": "#f7f9fc",
+                "surface-dim": "#d8dadd",
+                "on-secondary-fixed": "#001d34",
+                "inverse-surface": "#2d3133",
+                "tertiary-container": "#7c0002",
+                "outline": "#72777f",
+                "on-secondary-container": "#315b81",
+                "background": "#f7f9fc",
+                "on-tertiary-container": "#ff7e6d",
+                "on-tertiary-fixed": "#410000",
+                "inverse-on-surface": "#eff1f4",
+                "primary": "#002b22",
+                "on-error": "#ffffff",
+                "inverse-primary": "#4eddbb",
+                "secondary-fixed": "#cfe5ff",
+                "surface-tint": "#006b58",
+                "surface-container-lowest": "#ffffff",
+                "error-container": "#ffdad6",
+                "on-tertiary-fixed-variant": "#910807",
+                "tertiary-fixed-dim": "#ffb4a9",
+                "on-primary-fixed-variant": "#005141",
+                "outline-variant": "#c2c7cf",
+                "on-primary": "#ffffff",
+                "on-surface": "#191c1e",
+                "secondary": "#386188",
+                "on-tertiary": "#ffffff",
+                "on-primary-container": "#12b99a",
+                "secondary-container": "#aad3ff",
+                "primary-container": "#004336",
+                "surface-container-highest": "#e0e3e6",
+                "on-secondary": "#ffffff",
+                "error": "#ba1a1a"
+              },
+              fontFamily: {
+                "headline": ["Newsreader", "serif"],
+                "body": ["Manrope", "sans-serif"],
+                "label": ["Manrope", "sans-serif"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #f7f9fc; color: #191c1e; }
+        .serif { font-family: 'Newsreader', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(20px); }
+        .shadow-premium { box-shadow: 0 12px 32px rgba(0, 43, 34, 0.06); }
+    </style>
+</head>
+<body class="bg-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 glass shadow-sm">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold tracking-tight text-[#0A3D62] dark:text-blue-200 serif">DocHome</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-[#0A3D62] font-semibold border-b-2 border-[#0A3D62] pb-1 font-body text-sm" href="#">Home</a>
+<a class="text-slate-600 hover:text-[#0A3D62] transition-colors font-body text-sm" href="#">Services</a>
+<a class="text-slate-600 hover:text-[#0A3D62] transition-colors font-body text-sm" href="#">How It Works</a>
+<a class="text-slate-600 hover:text-[#0A3D62] transition-colors font-body text-sm" href="#">Doctors</a>
+<a class="text-slate-600 hover:text-[#0A3D62] transition-colors font-body text-sm" href="#">Contact</a>
+</div>
+<div class="flex items-center space-x-4">
+<span class="hidden lg:inline-block text-[#0A3D62] font-bold text-sm">+1-800-DOCHOME</span>
+<button class="bg-primary hover:opacity-90 text-white px-6 py-2.5 rounded-xl font-bold text-sm transition-all active:scale-95">
+                    Book Now
+                </button>
+<div class="flex items-center text-[#0A3D62]">
+<span class="material-symbols-outlined" data-icon="stethoscope">stethoscope</span>
+</div>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Section 1: Hero -->
+<section class="max-w-7xl mx-auto px-8 py-20 lg:py-32 grid lg:grid-cols-2 gap-16 items-center">
+<div class="space-y-8">
+<div class="inline-flex items-center px-4 py-2 bg-primary-container/10 text-on-primary-container rounded-full text-sm font-semibold">
+<span class="w-2 h-2 bg-on-primary-container rounded-full mr-2 animate-pulse"></span>
+                    Doctors available now in your area
+                </div>
+<h1 class="text-6xl md:text-7xl serif text-primary leading-[1.1] font-medium italic lg:not-italic">
+                    A Doctor At Your <span class="italic text-secondary">Door</span> — Care You Can Count On
+                </h1>
+<p class="text-lg text-on-surface-variant max-w-lg font-body leading-relaxed">
+                    Certified physicians, same-day home visits, available 7 days a week. Premium medical care delivered in the comfort of your sanctuary.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<button class="bg-gradient-to-br from-primary to-primary-container text-white px-8 py-4 rounded-xl font-bold shadow-premium hover:opacity-90 transition-all flex items-center justify-center">
+                        Book a Home Visit
+                    </button>
+<button class="bg-surface-container-highest text-on-surface px-8 py-4 rounded-xl font-bold hover:bg-surface-container-high transition-all flex items-center justify-center">
+                        See How It Works
+                    </button>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary-container/5 rounded-[2rem] -rotate-3 transition-transform group-hover:rotate-0"></div>
+<div class="relative overflow-hidden rounded-[2rem] shadow-2xl aspect-[4/5] lg:aspect-square">
+<img alt="Doctor Illustration" class="w-full h-full object-cover" data-alt="A friendly professional female doctor in white coat holding a modern medical bag standing in a warm sunlit living room background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfCsHpLoBNVKcEg5Bxrp-eVxLO-vJuxOOg8ismxoME4CawB9oPx6eJiSc_VWaPHUsVhUpOscAScYTxG5n0h-lFXrmefTkd_8Uj3_uu0ewRukXRQ-MMspvDjyq8Eow_zcutuQyiJR--VmGLVmASLNDnFBnU7uzOQ2KDCLduE4tIEIETGRe9zeMvHh_a46A9mq4Yr028emGIWY_hMNUz2md2zMt2zFV5yUpTVQT5QgjwVhgPAIz9NBlIE2E7qV_UBxMtCawsKpZGov8"/>
+</div>
+</div>
+</section>
+<!-- Section 2: How It Works -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-7xl mx-auto px-8">
+<h2 class="text-4xl md:text-5xl serif text-center mb-20 text-primary">Getting Care Is This Simple</h2>
+<div class="relative flex flex-col md:flex-row justify-between items-center gap-12">
+<!-- Step 1 -->
+<div class="flex flex-col items-center text-center space-y-6 z-10 w-full md:w-1/3">
+<div class="w-20 h-20 bg-surface-container-lowest rounded-full flex items-center justify-center text-3xl font-black serif text-primary-container shadow-premium">01</div>
+<h3 class="text-xl font-bold font-body">Tell Us What You Need</h3>
+<p class="text-on-surface-variant text-sm px-4">Briefly describe your symptoms through our portal or phone call.</p>
+</div>
+<!-- Arrow 1 -->
+<div class="hidden md:block absolute top-10 left-[25%] w-[20%] border-t-2 border-dashed border-outline-variant opacity-50"></div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center text-center space-y-6 z-10 w-full md:w-1/3">
+<div class="w-20 h-20 bg-surface-container-lowest rounded-full flex items-center justify-center text-3xl font-black serif text-primary-container shadow-premium">02</div>
+<h3 class="text-xl font-bold font-body">Pick Your Slot</h3>
+<p class="text-on-surface-variant text-sm px-4">Choose a time that fits your schedule, today or later this week.</p>
+</div>
+<!-- Arrow 2 -->
+<div class="hidden md:block absolute top-10 right-[25%] w-[20%] border-t-2 border-dashed border-outline-variant opacity-50"></div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center text-center space-y-6 z-10 w-full md:w-1/3">
+<div class="w-20 h-20 bg-surface-container-lowest rounded-full flex items-center justify-center text-3xl font-black serif text-primary-container shadow-premium">03</div>
+<h3 class="text-xl font-bold font-body">Doctor Arrives</h3>
+<p class="text-on-surface-variant text-sm px-4">Receive professional care, prescriptions, and advice at your doorstep.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Services Grid -->
+<section class="py-24 px-8 max-w-7xl mx-auto">
+<div class="text-center mb-16 space-y-4">
+<h2 class="text-4xl md:text-5xl serif text-primary">What We Treat At Home</h2>
+<p class="text-on-surface-variant font-body">From routine checkups to urgent care — we come to you.</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="p-8 bg-surface-container-lowest rounded-2xl hover:bg-primary-container group transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-on-primary-container group-hover:text-white mb-6 block" data-icon="medical_services">medical_services</span>
+<h3 class="text-xl font-bold mb-3 group-hover:text-white">General Illness</h3>
+<p class="text-on-surface-variant text-sm mb-6 group-hover:text-surface-variant">Care for fever, infections, respiratory issues, and seasonal allergies.</p>
+<a class="text-on-primary-container font-bold text-sm flex items-center group-hover:text-white" href="#">Learn More <span class="material-symbols-outlined ml-1 text-base" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+<!-- Card 2 -->
+<div class="p-8 bg-surface-container-lowest rounded-2xl hover:bg-primary-container group transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-on-primary-container group-hover:text-white mb-6 block" data-icon="vaccines">vaccines</span>
+<h3 class="text-xl font-bold mb-3 group-hover:text-white">Vaccinations</h3>
+<p class="text-on-surface-variant text-sm mb-6 group-hover:text-surface-variant">Flu shots, pediatric immunizations, and travel vaccines administered at home.</p>
+<a class="text-on-primary-container font-bold text-sm flex items-center group-hover:text-white" href="#">Learn More <span class="material-symbols-outlined ml-1 text-base" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+<!-- Card 3 -->
+<div class="p-8 bg-surface-container-lowest rounded-2xl hover:bg-primary-container group transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-on-primary-container group-hover:text-white mb-6 block" data-icon="monitor_heart">monitor_heart</span>
+<h3 class="text-xl font-bold mb-3 group-hover:text-white">Health Checkup</h3>
+<p class="text-on-surface-variant text-sm mb-6 group-hover:text-surface-variant">Comprehensive body screening, vitals monitoring, and lab sample collection.</p>
+<a class="text-on-primary-container font-bold text-sm flex items-center group-hover:text-white" href="#">Learn More <span class="material-symbols-outlined ml-1 text-base" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+<!-- Card 4 -->
+<div class="p-8 bg-surface-container-lowest rounded-2xl hover:bg-primary-container group transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-on-primary-container group-hover:text-white mb-6 block" data-icon="child_care">child_care</span>
+<h3 class="text-xl font-bold mb-3 group-hover:text-white">Pediatric Care</h3>
+<p class="text-on-surface-variant text-sm mb-6 group-hover:text-surface-variant">Specialized care for children in an environment where they feel safest.</p>
+<a class="text-on-primary-container font-bold text-sm flex items-center group-hover:text-white" href="#">Learn More <span class="material-symbols-outlined ml-1 text-base" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+<!-- Card 5 -->
+<div class="p-8 bg-surface-container-lowest rounded-2xl hover:bg-primary-container group transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-on-primary-container group-hover:text-white mb-6 block" data-icon="elderly">elderly</span>
+<h3 class="text-xl font-bold mb-3 group-hover:text-white">Elder Care</h3>
+<p class="text-on-surface-variant text-sm mb-6 group-hover:text-surface-variant">Geriatric support, chronic disease management, and mobility assistance.</p>
+<a class="text-on-primary-container font-bold text-sm flex items-center group-hover:text-white" href="#">Learn More <span class="material-symbols-outlined ml-1 text-base" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+<!-- Card 6 -->
+<div class="p-8 bg-surface-container-lowest rounded-2xl hover:bg-primary-container group transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-on-primary-container group-hover:text-white mb-6 block" data-icon="healing">healing</span>
+<h3 class="text-xl font-bold mb-3 group-hover:text-white">Wound &amp; IV Care</h3>
+<p class="text-on-surface-variant text-sm mb-6 group-hover:text-surface-variant">Post-surgical dressing, IV fluids, and professional wound management.</p>
+<a class="text-on-primary-container font-bold text-sm flex items-center group-hover:text-white" href="#">Learn More <span class="material-symbols-outlined ml-1 text-base" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+</div>
+</section>
+<!-- Section 4: Doctor Profiles -->
+<section class="bg-surface py-24 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div>
+<h2 class="text-4xl md:text-5xl serif text-primary mb-4">Certified Doctors Who Come To You</h2>
+<div class="flex flex-wrap gap-4 text-xs font-bold uppercase tracking-wider text-secondary">
+<span class="bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full flex items-center"><span class="material-symbols-outlined text-sm mr-1" data-icon="verified_user">verified_user</span> Background Verified</span>
+<span class="bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full flex items-center"><span class="material-symbols-outlined text-sm mr-1" data-icon="domain">domain</span> Hospital Affiliated</span>
+<span class="bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full flex items-center"><span class="material-symbols-outlined text-sm mr-1" data-icon="policy">policy</span> Insured Practice</span>
+</div>
+</div>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Doc 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-[2rem] shadow-premium hover:-translate-y-2 transition-transform">
+<div class="relative w-32 h-32 mx-auto mb-6">
+<img alt="Dr. Sarah James" class="w-full h-full object-cover rounded-full" data-alt="Close-up professional portrait of a female doctor with glasses and a stethoscope, warm natural lighting, blurred medical office background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANGMWDh2-fMmo15yobEjIjiwRrGLvr3b8GCykxAuCemvJin10YM6DsGBNvmjtDHsCQ5gqrETPV4ov-Rv5tnoJCDvLzQJ7gx11XsLhJAyfA2VxMJXjQYY2Hdzrl8LD0tncbtI96G_p5fGBuClGYbA2BFTjllAWPNxClk9ceEjnpB_itsCduZ1UjaT8pKvkerGA-fvvNck3R-SkDKj6tP_Gp_3luZjjCHjmZ_SnPDAEIKOZGsVpJQJB7Na6Dt312fz-E8UR2UUaijLQ"/>
+</div>
+<div class="text-center">
+<h3 class="text-xl font-bold mb-1">Dr. Sarah James</h3>
+<span class="inline-block px-3 py-1 bg-surface-container-high text-on-surface text-xs rounded-full mb-4">Family Physician</span>
+<p class="text-on-surface-variant text-sm mb-2">MBBS, MD • 12 Years Exp.</p>
+<div class="flex items-center justify-center text-yellow-500 mb-6">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="ml-2 text-on-surface text-sm font-bold">4.9 (120+)</span>
+</div>
+<button class="w-full py-3 border border-outline-variant rounded-xl font-bold hover:bg-surface-container transition-colors">View Profile</button>
+</div>
+</div>
+<!-- Doc 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-[2rem] shadow-premium border-2 border-primary-container/10">
+<div class="relative w-32 h-32 mx-auto mb-6">
+<img alt="Dr. Michael Chen" class="w-full h-full object-cover rounded-full" data-alt="Professional portrait of a male doctor in blue scrubs, smiling confidently, soft bokeh background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0yAXWgBlgjaHGNsSVQuATpNKldYjVWydrei5oSdcbWLq-GgkFLAGX_M6857n_5xavNyLfFLSZsfXVtJfkg_tboJRHuKUuMnX527WUXx49Wd20Rj8ssd54N7ZQiy67m02khMo9EWqsF06u_0HvMBt-BP8RpJqtaUZX0rJeiY_hKUfyF_VFbD8caHPr_JdQNJt4_DlHjhTagtY23_sFj8oJPCzzNHlv1cYCHuorc_-jYisFyLVhlPYY6S9h4sexdymS5C8vRYNWdGo"/>
+</div>
+<div class="text-center">
+<h3 class="text-xl font-bold mb-1">Dr. Michael Chen</h3>
+<span class="inline-block px-3 py-1 bg-surface-container-high text-on-surface text-xs rounded-full mb-4">Pediatrician</span>
+<p class="text-on-surface-variant text-sm mb-2">MBBS, DCH • 8 Years Exp.</p>
+<div class="flex items-center justify-center text-yellow-500 mb-6">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="ml-2 text-on-surface text-sm font-bold">5.0 (85+)</span>
+</div>
+<button class="w-full py-3 bg-primary text-white rounded-xl font-bold hover:opacity-90 transition-opacity">View Profile</button>
+</div>
+</div>
+<!-- Doc 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-[2rem] shadow-premium hover:-translate-y-2 transition-transform">
+<div class="relative w-32 h-32 mx-auto mb-6">
+<img alt="Dr. Elena Rodriguez" class="w-full h-full object-cover rounded-full" data-alt="Portrait of a female doctor with kind eyes, professional and approachable look, soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCR3-sFc6O8Muqjix30Z9vzvrrFGggujO8sRT2pU3qhQ7Ap-XCz-I1xbYKwlHTDU-gyYJesDbmrB7E4xHtb2vMcXdZyBJRE9dRFezjYsrDUOQlnxwb07sZnUQdJvMrvjY0Kyct4lZZJg5bxmDS8B-MZRVF9ZSOcUHDk4IR3IfhAIpvPEIwjp_2BuQyNPHAZ73UCx8ia4D5_WaXLsjuCuACiWidkJ4hCNzc5Aia0ftLlEMxrNGakkuR82BI9UjTeaEOj662dMbZOWwE"/>
+</div>
+<div class="text-center">
+<h3 class="text-xl font-bold mb-1">Dr. Elena Rodriguez</h3>
+<span class="inline-block px-3 py-1 bg-surface-container-high text-on-surface text-xs rounded-full mb-4">Geriatric Specialist</span>
+<p class="text-on-surface-variant text-sm mb-2">MBBS, MD • 15 Years Exp.</p>
+<div class="flex items-center justify-center text-yellow-500 mb-6">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="ml-2 text-on-surface text-sm font-bold">4.8 (200+)</span>
+</div>
+<button class="w-full py-3 border border-outline-variant rounded-xl font-bold hover:bg-surface-container transition-colors">View Profile</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Testimonials -->
+<section class="bg-surface-container-low py-24 px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-4xl md:text-5xl serif text-center mb-16 text-primary">What Our Patients Say</h2>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm relative">
+<div class="flex text-yellow-500 mb-4">
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface italic mb-8">"At midnight, when my fever spiked and no clinic was open, DocHome was a lifesaver. The doctor arrived in 45 minutes. Such absolute relief."</p>
+<div class="flex items-center">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white font-bold text-sm">AM</div>
+<div class="ml-3">
+<p class="text-sm font-bold">Anita Mishra</p>
+<p class="text-xs text-on-surface-variant">Midnight Emergency Relief</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm">
+<div class="flex text-yellow-500 mb-4">
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface italic mb-8">"Taking a crying 2-year-old to a hospital is a nightmare. Having the pediatrician come home made all the difference. Highly professional."</p>
+<div class="flex items-center">
+<div class="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-white font-bold text-sm">RK</div>
+<div class="ml-3">
+<p class="text-sm font-bold">Rohan Kapoor</p>
+<p class="text-xs text-on-surface-variant">Child Care Parent</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm">
+<div class="flex text-yellow-500 mb-4">
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface italic mb-8">"Managing my father's diabetes is much easier with these home checkups. No more long commutes for a senior citizen. Thank you, DocHome!"</p>
+<div class="flex items-center">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-white font-bold text-sm">VS</div>
+<div class="ml-3">
+<p class="text-sm font-bold">Vidya Sharma</p>
+<p class="text-xs text-on-surface-variant">Senior Citizen Caretaker</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: Pricing Plans -->
+<section class="py-24 px-8 max-w-7xl mx-auto">
+<h2 class="text-4xl md:text-5xl serif text-center mb-16 text-primary">Simple, Transparent Pricing</h2>
+<div class="grid md:grid-cols-3 gap-8 items-center">
+<!-- Basic -->
+<div class="p-10 rounded-2xl bg-surface-container-low border border-outline-variant/20">
+<h3 class="text-xl font-bold mb-2">Basic Visit</h3>
+<div class="text-4xl font-black serif text-primary mb-6">₹499<span class="text-base font-normal">/visit</span></div>
+<ul class="space-y-4 mb-8">
+<li class="flex items-center text-sm"><span class="material-symbols-outlined text-on-primary-container mr-2 text-lg" data-icon="check_circle">check_circle</span> One-time consultation</li>
+<li class="flex items-center text-sm"><span class="material-symbols-outlined text-on-primary-container mr-2 text-lg" data-icon="check_circle">check_circle</span> Digital Prescription</li>
+<li class="flex items-center text-sm opacity-50"><span class="material-symbols-outlined mr-2 text-lg" data-icon="cancel">cancel</span> Free Follow-up</li>
+</ul>
+<button class="w-full py-3 border border-primary text-primary font-bold rounded-xl hover:bg-primary hover:text-white transition-all">Select Plan</button>
+</div>
+<!-- Care Plus -->
+<div class="p-10 rounded-3xl bg-primary-container text-white shadow-2xl relative scale-105">
+<div class="absolute top-0 right-10 -translate-y-1/2 bg-on-primary-container text-primary-container font-black text-xs py-2 px-4 rounded-full">RECOMMENDED</div>
+<h3 class="text-xl font-bold mb-2">Care Plus</h3>
+<div class="text-4xl font-black serif mb-6">₹899<span class="text-base font-normal opacity-70">/month</span></div>
+<ul class="space-y-4 mb-8">
+<li class="flex items-center text-sm"><span class="material-symbols-outlined text-on-primary-container mr-2 text-lg" data-icon="check_circle">check_circle</span> 2 Consultations per month</li>
+<li class="flex items-center text-sm"><span class="material-symbols-outlined text-on-primary-container mr-2 text-lg" data-icon="check_circle">check_circle</span> Free Digital Prescription</li>
+<li class="flex items-center text-sm"><span class="material-symbols-outlined text-on-primary-container mr-2 text-lg" data-icon="check_circle">check_circle</span> 1 Free Follow-up call</li>
+<li class="flex items-center text-sm"><span class="material-symbols-outlined text-on-primary-container mr-2 text-lg" data-icon="check_circle">check_circle</span> Priority Scheduling</li>
+</ul>
+<button class="w-full py-4 bg-on-primary-container text-primary-container font-black rounded-xl hover:opacity-90 transition-all">Choose Most Popular</button>
+</div>
+<!-- Family -->
+<div class="p-10 rounded-2xl bg-surface-container-low border border-outline-variant/20">
+<h3 class="text-xl font-bold mb-2">Family Plan</h3>
+<div class="text-4xl font-black serif text-primary mb-6">₹2,199<span class="text-base font-normal">/month</span></div>
+<ul class="space-y-4 mb-8">
+<li class="flex items-center text-sm"><span class="material-symbols-outlined text-on-primary-container mr-2 text-lg" data-icon="check_circle">check_circle</span> Up to 5 family members</li>
+<li class="flex items-center text-sm"><span class="material-symbols-outlined text-on-primary-container mr-2 text-lg" data-icon="check_circle">check_circle</span> Unlimited Consultations</li>
+<li class="flex items-center text-sm"><span class="material-symbols-outlined text-on-primary-container mr-2 text-lg" data-icon="check_circle">check_circle</span> Monthly Health Checks</li>
+</ul>
+<button class="w-full py-3 border border-primary text-primary font-bold rounded-xl hover:bg-primary hover:text-white transition-all">Select Plan</button>
+</div>
+</div>
+</section>
+<!-- Section 7: FAQ + Inline CTA -->
+<section class="bg-surface py-24 px-8 max-w-7xl mx-auto grid lg:grid-cols-12 gap-16">
+<div class="lg:col-span-7">
+<h2 class="text-4xl md:text-5xl serif text-primary mb-12">Frequently Asked Questions</h2>
+<div class="space-y-4">
+<details class="group bg-surface-container-lowest rounded-xl p-6 shadow-sm cursor-pointer" open="">
+<summary class="flex justify-between items-center font-bold text-lg list-none">
+                            What is the typical arrival time?
+                            <span class="material-symbols-outlined group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="mt-4 text-on-surface-variant text-sm leading-relaxed">Our doctors typically arrive within 45-90 minutes for urgent requests, or exactly at your scheduled appointment time for routine visits.</p>
+</details>
+<details class="group bg-surface-container-lowest rounded-xl p-6 shadow-sm cursor-pointer">
+<summary class="flex justify-between items-center font-bold text-lg list-none">
+                            Are your doctors certified?
+                            <span class="material-symbols-outlined group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="mt-4 text-on-surface-variant text-sm leading-relaxed">Every DocHome doctor is MCI certified with a minimum of 5 years of clinical experience and has passed a rigorous background check.</p>
+</details>
+<details class="group bg-surface-container-lowest rounded-xl p-6 shadow-sm cursor-pointer">
+<summary class="flex justify-between items-center font-bold text-lg list-none">
+                            Which cities are you currently in?
+                            <span class="material-symbols-outlined group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="mt-4 text-on-surface-variant text-sm leading-relaxed">We currently serve Mumbai, Delhi NCR, Bangalore, and Pune, with plans to expand to more Tier-1 cities soon.</p>
+</details>
+<details class="group bg-surface-container-lowest rounded-xl p-6 shadow-sm cursor-pointer">
+<summary class="flex justify-between items-center font-bold text-lg list-none">
+                            Do you provide care for children?
+                            <span class="material-symbols-outlined group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="mt-4 text-on-surface-variant text-sm leading-relaxed">Yes, we have specialized pediatric care teams who are experts in managing child health issues in a comfortable home setting.</p>
+</details>
+<details class="group bg-surface-container-lowest rounded-xl p-6 shadow-sm cursor-pointer">
+<summary class="flex justify-between items-center font-bold text-lg list-none">
+                            How do follow-ups work?
+                            <span class="material-symbols-outlined group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="mt-4 text-on-surface-variant text-sm leading-relaxed">After every visit, you get a 24-hour window for free chat follow-ups with your doctor through our mobile app.</p>
+</details>
+</div>
+</div>
+<div class="lg:col-span-5">
+<div class="sticky top-32 p-10 bg-surface-container-highest rounded-3xl space-y-8 text-center">
+<span class="material-symbols-outlined text-6xl text-primary" data-icon="help_center">help_center</span>
+<h3 class="text-3xl serif text-primary">Still Have Questions?</h3>
+<p class="text-on-surface-variant">Our support team is available 24/7 to help you with bookings or medical queries.</p>
+<div class="space-y-4">
+<button class="w-full py-4 bg-primary text-white font-bold rounded-xl flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined" data-icon="forum">forum</span> Chat With Us
+                        </button>
+<button class="w-full py-4 border-2 border-primary text-primary font-bold rounded-xl flex items-center justify-center gap-2 hover:bg-primary hover:text-white transition-all">
+<span class="material-symbols-outlined" data-icon="calendar_month">calendar_month</span> Book Now
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 border-t-0 border-surface-container-low">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 max-w-7xl mx-auto">
+<div class="space-y-6">
+<div class="text-xl font-black text-[#0A3D62] dark:text-blue-200">DocHome</div>
+<p class="text-slate-500 text-sm leading-relaxed">Reimagining medical care by bringing the hospital's expertise and the comfort of home together.</p>
+</div>
+<div>
+<h4 class="font-bold text-[#0A3D62] mb-6 font-body">Services</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-[#0A3D62] text-sm transition-all" href="#">Emergency Home Visit</a></li>
+<li><a class="text-slate-500 hover:text-[#0A3D62] text-sm transition-all" href="#">Elderly Care</a></li>
+<li><a class="text-slate-500 hover:text-[#0A3D62] text-sm transition-all" href="#">Pediatric Support</a></li>
+<li><a class="text-slate-500 hover:text-[#0A3D62] text-sm transition-all" href="#">Diagnostics</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-[#0A3D62] mb-6 font-body">Company</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-[#0A3D62] text-sm transition-all" href="#">About</a></li>
+<li><a class="text-slate-500 hover:text-[#0A3D62] text-sm transition-all" href="#">Terms</a></li>
+<li><a class="text-slate-500 hover:text-[#0A3D62] text-sm transition-all" href="#">Privacy</a></li>
+<li><a class="text-slate-500 hover:text-[#0A3D62] text-sm transition-all" href="#">FAQ</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-[#0A3D62] mb-6 font-body">Contact</h4>
+<ul class="space-y-4">
+<li class="flex items-center text-sm text-slate-500"><span class="material-symbols-outlined text-sm mr-2" data-icon="call">call</span> +1-800-DOCHOME</li>
+<li class="flex items-center text-sm text-slate-500"><span class="material-symbols-outlined text-sm mr-2" data-icon="mail">mail</span> support@dochome.com</li>
+<li class="flex items-center text-sm text-slate-500"><span class="material-symbols-outlined text-sm mr-2" data-icon="location_on">location_on</span> New Delhi, India</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-slate-200 dark:border-slate-800 py-8 px-12 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-xs text-slate-400">
+<p>© 2024 DocHome Medical Services. All rights reserved.</p>
+<div class="flex gap-6 mt-4 md:mt-0">
+<a class="hover:text-primary transition-colors" href="#">Twitter</a>
+<a class="hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="hover:text-primary transition-colors" href="#">Instagram</a>
+</div>
+</div>
+</footer>
+</body></html>
